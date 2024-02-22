@@ -1,7 +1,7 @@
 function generarFizzBuzz(numero)
 {
-    let FIZZ=3;
-    if(numero==FIZZ)
+    const FIZZ=3;
+    if(numero==FIZZ || numero%FIZZ==0)
     {
         return "fizz";
     }
