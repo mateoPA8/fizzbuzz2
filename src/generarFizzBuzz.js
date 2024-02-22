@@ -5,6 +5,10 @@ function generarFizzBuzz(numero)
     {
         return "fizz";
     }
+    if(numero==5)
+    {
+        return "buzz";
+    }
     return numero + "";//para convertir numero a string
 }
 export default generarFizzBuzz;
