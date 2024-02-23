@@ -1,4 +1,4 @@
-import generarFizzBuzz from "./generarFizzBuzz.js";
+import { generarListaNumero,generarFizzBuzz } from "./generarFizzBuzz";
 
 describe("fizzbuzz", () => {
   it("deberia generar el mismo numero para uno que no tiene reglas por ejemplo el 1", () => {
@@ -22,5 +22,8 @@ describe("fizzbuzz", () => {
   });
   it("deberia generar fizzbuzz para todos los multiplos de 5 y 3  como el 15", () => {
     expect(generarFizzBuzz(15)).toEqual("fizzbuzz");
+  });
+  it("deberia generar fizz,buzz,fizzbuzz, o el mismo numero para un rango de numeros hasta el que ingreso el usuario", () => {
+    expect(generarListaNumero(6)).toEqual(["1", "2", "fizz", "4", "buzz", "fizz"]);
   });
 });

@@ -17,4 +17,14 @@ function generarFizzBuzz(numero)
     
     return numero + "";//para convertir numero a string
 }
-export default generarFizzBuzz;
+
+function generarListaNumero(numero)
+{
+    var lista=[];
+    for(var i=1;i<=numero;i++)
+    {
+       lista.push(generarFizzBuzz(i));
+    }
+    return lista;
+}
+export {generarFizzBuzz,generarListaNumero};

@@ -1,15 +1,13 @@
-import sumar from "./sumador";
+import { generarListaNumero,generarFizzBuzz } from "./generarFizzBuzz";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const numero_input = document.querySelector("#primer-numero");
+const form = document.querySelector("#generar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const numero = numero_input.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + generarListaNumero(numero) + "</p>";
 });
